@@ -1,0 +1,27 @@
+.articolo{
+    padding-top: 10vh;
+    display: flex;
+    justify-content: center;
+    min-height: 80vh;
+}
+
+.articolo-testo{
+    width: 60vw;
+    margin: 10vh 0;
+    color: var(--font);
+}
+.articolo-testo p{
+    line-height: 2em;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+@media only screen and (max-width: 450px) {
+    .articolo-testo{
+        width: 80vw;
+        margin: 5vh auto;
+    }
+    .articolo-testo p{
+        font-size: 95%;
+    }
+}

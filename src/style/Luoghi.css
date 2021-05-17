@@ -1,0 +1,108 @@
+.luoghi{
+    padding-top: 10vh;
+    width: 100vw;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.mappa{
+    width: 80vw;
+    height:80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 5vh 0;
+}
+.luoghi iframe{
+    width: 80vw;
+    height: 100%;
+}
+.mappa h1{
+    width: 78vw;
+    padding: 1vw;
+    margin: 0;
+    color: var(--font);
+    border-left: 0.5vw solid var(--font);
+    background-color: var(--hellgray);
+}
+.highlight{
+    width: 80vw;
+    height: 60vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.left-text, .right-text{
+    padding: 5vh;
+    width: 30vw;
+    height: fit-content;
+    color: var(--font);
+}
+.right-text{
+    align-self: center;
+}
+.left-text h1, .right-text h1{
+    font-size: 300%;
+    margin: 1vh;
+}
+.left-text p, .right-text p{
+    margin: 1vh;
+}
+.highlight img{
+    height: 40vh;
+}
+.left-text h3, .right-text h3{
+    margin: 0;
+    margin-left: 1vh;
+    width: fit-content;
+    color: #ffc800;
+    padding: 2vh 2vw;
+    border: #ffc800 3px solid;
+    transition: 300ms;
+}
+.left-text h3:hover, .right-text h3:hover{
+    background-color:  rgba(255, 200, 0, 0.1);
+}
+
+@media only screen and (max-width: 800px) {
+    .highlight{
+        height: fit-content;
+        justify-content: center;
+    }
+    .highlight img{
+        height: 25vh;
+    }
+    .left-text{
+        display: none;
+    }
+    .mappa{
+        margin-bottom: 2vh;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .mappa{
+        width: 100vw;
+    }
+    .mappa h1{
+        width: 100vw;
+        border-left: 2vw solid var(--font);
+        padding-left: 4vw;
+    }
+    .mappa iframe{
+        width: 100vw;
+    }
+    .highlight{
+        width: 100vw;
+    }
+    .highlight img{
+        display: none;
+    }
+    .right-text{
+        width: 80vw;
+        padding: 0;
+        margin: 8vh auto;
+    }
+}
